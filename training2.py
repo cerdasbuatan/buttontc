@@ -132,8 +132,8 @@ model.compile(optimizer=RMSprop(), loss='categorical_crossentropy', metrics=['ac
 model.summary()
 
 # Pelatihan model
-batch_size = 10  # Ukuran batch
-epochs = 400  # Jumlah epoch
+batch_size = 30  # Ukuran batch
+epochs = 10 # Jumlah epoch
 model.fit([encoder_input_data_train, decoder_input_data_train],  # Melatih model
           decoder_output_data_train,
           batch_size=batch_size,

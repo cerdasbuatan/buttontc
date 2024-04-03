@@ -175,7 +175,7 @@ def chat(input_value, tokenizer, maxlen_answers, enc_model, dec_model):
     return decoded_translation.strip(), str(status).lower()
 
 
-factory, stemmer, punct_re_escape, unknowns, file_name, path = setConfig("output_dir")
+factory, stemmer, punct_re_escape, unknowns, file_name, path = setConfig("output_dir2")
 
 list_indonesia_slang, VOCAB_SIZE, maxlen_questions, maxlen_answers, tokenizer = setParams(path,
                                                                                           'daftar-slang-bahasa-indonesia.csv',
@@ -206,6 +206,6 @@ def botReply(message):
     return chat(message, tokenizer, maxlen_answers, enc_model, dec_model)
 
 
-def get_val_data(dir='output_dir'):
+def get_val_data(dir='output_dir2'):
     data = pd.read_csv(dir+'/val.csv')
     return data
