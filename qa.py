@@ -451,7 +451,7 @@ data = [
     ["Boleh curhat ga sih?|sorry ye, disini ga menerima untuk mendengarkan yang curhat. karen di sini tempat sharing tentang desain button menggunakan tailwind css"],                                                                                                                                   
     
 ]
-
+# dsda
 # Tulis data ke dalam file CSV
 with open('qa_alone.csv', mode='w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
